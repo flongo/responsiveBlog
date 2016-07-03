@@ -1,0 +1,49 @@
+@media #{$mobile} {
+  .mobile-hidden {
+    display: none;
+  }
+
+  .company-name-container {
+
+    & {
+      @include grid(100);
+    }
+
+    span {
+      font-size: 34px;
+      padding: 18px 0 0 10px;
+    }
+  }
+
+  .icon {
+    @include icon-size(38);
+  }
+
+  nav {
+
+    & {
+      position: relative;
+      text-align: center;
+    }
+
+    ul {
+      display: none;
+      position: absolute;
+      @include box();
+    }
+
+    li {
+      line-height: 30px;
+    }
+
+    &:focus {
+      ul {
+        display: inline-block;     
+        left: 1%;
+        width: 98%;
+        top: 38px;  
+      }
+    }
+  }
+
+}

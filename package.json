@@ -1,0 +1,20 @@
+{
+  "name": "responsiveBlog",
+  "version": "1.0.0",
+  "description": "Responsive blog page",
+  "main": "app.js",
+  "repository": "https://github.com/flongo/responsiveBlog",
+  "author": "Francesco Longo",
+  "license": "ICS",
+  "scripts": {
+    "start": "node app.js",
+    "prestart": "grunt"
+  },
+  "dependencies": {
+    "express": "~4.13.4"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-sass": "~1.2.0"
+  }
+}

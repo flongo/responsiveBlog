@@ -1,0 +1,20 @@
+.icon {
+  color: white;
+  background-color: $custom-color-dark;
+  text-align: center;
+  display: inline-block;
+}
+
+.social-links {
+
+  & {
+    padding: 10px;
+    @include grid(100);
+  }
+
+  li {
+    @include grid(100/3);
+    text-align: center;
+  }
+
+}
